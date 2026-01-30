@@ -84,7 +84,7 @@ jobs:
       - name: Tag Docker image with commit SHA
         run: |
           docker tag devsecops-lab:latest \
-          ${{ secrets.DOCKERHUB_USERNAME }}/devsecops-lab:${{ github.sha }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/devsecops-lab:latest
 
       - name: Push Docker image to Docker Hub
         run: |
