@@ -90,4 +90,3 @@ jobs:
         run: |
           docker push \
           ${{ secrets.DOCKERHUB_USERNAME }}/devsecops-lab:${{ github.sha }}
-
